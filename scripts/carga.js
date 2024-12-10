@@ -1,4 +1,4 @@
-
+/*
 // Cargar el archivo nav.html desde la carpeta pageside
 fetch('/templates/nav.html')
     .then(response => response.text())
@@ -21,4 +21,4 @@ fetch('/templates/script.html')
 .then(data => {
     document.getElementById('script-placeholder').innerHTML = data;
 })
-.catch(error => console.error('Error loading footer:', error));
+.catch(error => console.error('Error loading footer:', error));*/

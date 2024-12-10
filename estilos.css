@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: black;
+
+}
+
+h2{
+  color: #3498db;
+}
+
+section {
+  height: 100vh; /* Altura del 95% de la ventana */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  text-align: center; /* Opcional: Centra el texto */
+  padding: 20px;
+  margin-bottom: 20px; /* Espacio entre secciones */
+}
+/*----------------Navbar----------*/
+.navbar-custom {
+  width: 100%;
+  height: 10%;
+  margin: 0 auto;  
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+  background-color: #333;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+  font-size: 16px;
+  background-color: #333;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  background-color: rgb(0, 255, 255);
+  color: white;
+  width: auto;
+}
+
+/* Colores para iconos */
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+header {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*----------------Presentacion----------*/
+.presentacion{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh;
+}
+.left img {
+  width: 150px; 
+  height: auto; 
+}
+
+.right {
+  max-width: 500px; 
+}
+.presentacion img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+h1{
+  margin: 20px;
+  color: #7a7a7a;
+}
+h2 {
+  display: inline-block;
+  font-size: 36px;
+}
+.text-container {
+  display: inline-flex;
+  flex-direction: column;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+/* Estilos para los enlaces sociales */
+.social-links {
+  display: flex;
+  justify-content: center;  /* Centra los íconos */
+  gap: 20px;  /* Espacio entre los íconos */
+  margin: 20px;  /* Separa los enlaces sociales del título */
+  
+}
+
+.social-links a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 30px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links .instagram {
+  color: #E4405F; /* Color de Instagram */
+  text-shadow: 2px 2px 4px rgba(228, 64, 95, 0.5); /* Sombra en el mismo color */
+}
+
+.social-links .linkedin {
+  color: #1DA1F2; /* Color de LinkedIn */
+  text-shadow: 2px 2px 4px rgba(29, 161, 242, 0.5); /* Sombra en el mismo color */
+}
+
+.social-links .whatsapp {
+  color: #25D366; /* Color de WhatsApp */
+  text-shadow: 2px 2px 4px rgba(37, 211, 102, 0.5); /* Sombra en el mismo color */
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+/*----------------Sobre mi----------*/
+.sobremi {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sobremi h2 {
+  font-size: 2rem; 
+  font-weight: 600; 
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+
+.sobremi p {
+  font-size: 1.1rem; 
+  color: #555; 
+  line-height: 1.7; 
+  margin-bottom: 20px; 
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sobremi div{
+  padding: 10px;
+}
+
+.sobremi p:last-of-type {
+  margin-bottom: 0; 
+}
+
+.sobremi p strong {
+  color: #3498db; 
+  font-weight: bold; 
+}
+
+/* Contenedor que va a centrar los iconos */
+.icon-container {
+  display: flex;                /* Utiliza flexbox para alinear los iconos */
+  justify-content: center;      /* Centra los iconos horizontalmente */
+  align-items: center;          /* Centra los iconos verticalmente */
+  gap: 10px;                    /* Espacio entre los iconos */
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Estilo para los iconos */
+.icon-container img {
+  width: 50px;  
+  height: 50px;            /* Tamaño del icono */
+  transition: all 0.3s ease;    /* Transición suave */
+}
+
+/* Efecto hover: cambia el color y agranda el icono */
+.icon-container i:hover {
+  transform: scale(1.2);        /* Aumenta el tamaño del icono */
+}
+
+/*----------MisProyectos------------*/
+
+.mis-proyectos {
+  padding-top:80px;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+}
+
+.mis-proyectos h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando la pantalla sea pequeña */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Espacio entre las filas */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efecto al pasar el ratón */
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Hace que la imagen cubra el área sin deformarse */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #2980b9; /* Color más oscuro al pasar el ratón */
+}
+
+/*----------------Contacto----------*/
+/* Estilos para la sección de contacto */
+.contactame {
+  padding-top:80px;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh;
+}
+
+.contactame h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contactame p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+#contactForm {
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px black;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  padding-top: 5px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: black;
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  background-color: #ccc;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border: 2px solid transparent;
+    transition: all 0.1s ease;
+  
+}
+
+#contactForm textarea {
+  height: auto;
+}
+
+#contactForm button {
+  background-color: #23506e;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 40%;
+}
+
+#contactForm button:hover {
+  background-color: #3498db;
+}
+
+#contactForm button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Contenedor del input y etiqueta */
+.floating-label {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.floating-label input,
+.floating-label textarea {
+  width: 100%;
+  padding: 12px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.floating-label label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto de movimiento al interactuar */
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label textarea:focus + label,
+.floating-label textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: #3498db;
+}
+
+/* Estilo del textarea */
+.floating-label textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Efecto de enfoque */
+.floating-label input:focus,
+.floating-label textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/*----footer---*/
+/* Estilos del footer */
+.footer {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+
+/* Estilos para el mensaje de respuesta */
+#responseMessage {
+  text-align: center;
+  color: #28a745;
+  font-size: 1.1rem;
+}
+
+/* Para pantallas de tamaño mediano (tabletas) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .contactame{
+    padding-top: 500px;
+    margin-bottom: 500px;
+   }
+}
+
+
+/* Para pantallas móviles */
+@media (max-width: 768px) {
+  section {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px; 
+    flex-wrap: wrap;
+  }
+
+  .presentacion{
+    margin-top: -20px;
+  }
+
+ .contactame{
+  padding-top: 900px;
+  margin-bottom: 600px;
+ }
+
+ footer {
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 580px;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto
+}
+
+footer{
+  position: sticky;
+  bottom: 0;
+  width: 500px;
+  text-align: center
+  }
+}
+
+
+/* Para pantallas móviles */
+@media (max-width: 480px) {
+  section {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px; 
+    flex-wrap: wrap;
+  }
+
+  .presentacion{
+    margin-top: -20px;
+  }
+
+ .contactame{
+  padding-top: 900px;
+  margin-bottom: 600px;
+ }
+
+ footer {
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 580px;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto
+}
+
+footer{
+  position: sticky;
+  bottom: 0;
+  width: 500px;
+  text-align: center
+  }
+}
+
+
+
+
+
+
+
+
